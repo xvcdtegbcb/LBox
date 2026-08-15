@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements">
+    <Style src="PlayerListPanel.uss" />
+    <VisualElement class="main-window">
+        <!-- Header -->
+        <VisualElement class="header-row">
+            <Label class="header-title" text="玩家列表" />
+            <VisualElement class="header-spacer" />
+            <Label class="header-count" name="total-count" text="0 / 16" />
+        </VisualElement>
+        <!-- Team columns -->
+        <VisualElement class="teams-container">
+            <!-- Red Team -->
+            <VisualElement class="team-column team-red">
+                <VisualElement class="team-header team-header-red">
+                    <Label class="team-name" text="红队" />
+                    <Label class="team-count" name="red-count" text="0" />
+                </VisualElement>
+                <ScrollView class="player-scroll">
+                    <VisualElement name="red-list" class="player-list" />
+                </ScrollView>
+            </VisualElement>
+            <!-- Blue Team -->
+            <VisualElement class="team-column team-blue">
+                <VisualElement class="team-header team-header-blue">
+                    <Label class="team-name" text="蓝队" />
+                    <Label class="team-count" name="blue-count" text="0" />
+                </VisualElement>
+                <ScrollView class="player-scroll">
+                    <VisualElement name="blue-list" class="player-list" />
+                </ScrollView>
+            </VisualElement>
+        </VisualElement>
+        <!-- Bottom action bar -->
+        <VisualElement class="action-bar">
+            <Label class="action-hint" text="点击空槽位切换队伍" />
+            <VisualElement class="action-spacer" />
+            <Button name="ready-btn" class="ready-btn" text="准备" />
+            <Button name="cancel-btn" class="cancel-btn" text="取消准备" />
+        </VisualElement>
+    </VisualElement>
+</UXML>
