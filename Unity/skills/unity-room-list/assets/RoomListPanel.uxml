@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements">
+    <Style src="RoomListPanel.uss" />
+    <VisualElement class="main-window">
+        <!-- Header -->
+        <VisualElement class="header-row">
+            <Label class="header-title" text="房间列表" />
+            <VisualElement class="header-spacer" />
+            <Button name="create-btn" class="create-btn" text="创建房间" />
+        </VisualElement>
+        <!-- Column header -->
+        <VisualElement class="column-header">
+            <Label class="col col-name" text="房间名" />
+            <Label class="col col-map" text="地图" />
+            <Label class="col col-mode" text="模式" />
+            <Label class="col col-players" text="人数" />
+            <Label class="col col-status" text="状态" />
+            <Label class="col col-action" text="操作" />
+        </VisualElement>
+        <!-- Room list -->
+        <ScrollView class="room-scroll" vertical-scroller-visibility="Auto">
+            <VisualElement name="room-list" class="room-list" />
+        </ScrollView>
+        <!-- Footer -->
+        <VisualElement class="footer-row">
+            <Label name="room-count" class="room-count" text="共 0 个房间" />
+            <VisualElement class="footer-spacer" />
+            <Button name="refresh-btn" class="refresh-btn" text="刷新" />
+        </VisualElement>
+    </VisualElement>
+</UXML>
