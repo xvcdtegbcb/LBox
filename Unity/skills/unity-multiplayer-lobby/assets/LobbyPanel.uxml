@@ -1,0 +1,65 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/LobbyPanel.uss?fileID=7433441132597879392&amp;guid=649d7d09cd5beba47870c116ca42d727&amp;type=3#LobbyPanel" />
+    <ui:VisualElement class="main-window">
+        <ui:VisualElement class="header-row">
+            <ui:VisualElement class="header-group">
+                <ui:Label text="房间名" class="header-label" />
+                <ui:TextField name="room-name" value="Room 2294" class="room-name-edit" />
+            </ui:VisualElement>
+            <ui:VisualElement class="header-spacer" />
+        </ui:VisualElement>
+        <ui:VisualElement class="content-row">
+            <ui:VisualElement class="left-panel">
+                <!-- Room visibility group (outside ScrollView so Toggle clicks work) -->
+                <ui:VisualElement class="header-group room-visibility-group">
+                    <ui:Label text="公开" class="public-label" />
+                    <ui:Button name="public-toggle" text="●" class="public-toggle" />
+                    <ui:Label name="password-label" text="密码" class="password-label" />
+                    <ui:TextField name="password-field" isPasswordField="true" class="password-field" />
+                </ui:VisualElement>
+                <ui:ScrollView class="left-scroll" vertical-scroller-visibility="Hidden">
+                    <ui:VisualElement class="left-content">
+                        <ui:VisualElement name="map-preview" class="map-preview">
+                            <ui:Label text="地图预览" class="map-preview-placeholder" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="settings-container" class="settings-container" />
+                        <ui:VisualElement class="map-desc-section">
+                            <ui:Label text="地图描述" class="map-desc-title" />
+                            <ui:Label name="map-desc" class="map-desc-text" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+            <ui:VisualElement class="right-panel" name="right-panel">
+                <ui:VisualElement class="teams-container" name="teams-container">
+                    <ui:VisualElement class="team-column team-red" name="team-red">
+                        <ui:VisualElement class="team-header team-header-red" name="red-header">
+                            <ui:Label text="红队" class="team-name" />
+                            <ui:Label name="red-count" text="0/8" class="team-count" />
+                        </ui:VisualElement>
+                        <ui:ScrollView class="player-scroll" vertical-scroller-visibility="Hidden">
+                            <ui:VisualElement name="red-list" class="player-list" />
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="team-column team-blue" name="team-blue">
+                        <ui:VisualElement class="team-header team-header-blue" name="blue-header">
+                            <ui:Label text="蓝队" class="team-name" />
+                            <ui:Label name="blue-count" text="0/8" class="team-count" />
+                        </ui:VisualElement>
+                        <ui:ScrollView class="player-scroll" vertical-scroller-visibility="Hidden">
+                            <ui:VisualElement name="blue-list" class="player-list" />
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="action-bar">
+            <ui:Label text="点击空槽位切换队伍" class="action-hint" />
+            <ui:VisualElement class="action-spacer" />
+            <ui:Button name="back-btn" text="返回" class="back-btn" />
+            <ui:Button name="ready-btn" text="准备" class="ready-btn" />
+            <ui:Button name="cancel-btn" text="取消准备" class="cancel-btn" />
+            <ui:Button name="start-btn" text="开始游戏" class="start-btn" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

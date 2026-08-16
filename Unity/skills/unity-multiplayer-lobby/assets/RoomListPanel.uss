@@ -1,0 +1,204 @@
+/* ── Main window ── */
+.main-window {
+    background-color: #0D0D0D;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+/* ── Header ── */
+.header-row {
+    background-color: #1F1F1F;
+    border-bottom-width: 1px;
+    border-bottom-color: #333333;
+    flex-direction: row;
+    height: 46px;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-shrink: 0;
+}
+
+.header-title {
+    color: #E6E6E6;
+    font-size: 15px;
+    -unity-font-style: bold;
+}
+
+.header-spacer {
+    flex-grow: 1;
+}
+
+.create-btn {
+    color: #FFFFFF;
+    font-size: 13px;
+    -unity-font-style: bold;
+    background-color: #2E7D32;
+    border-width: 0px;
+    border-radius: 4px;
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-shrink: 0;
+}
+
+.create-btn:hover {
+    background-color: #388E3C;
+}
+
+.create-btn:active {
+    background-color: #1B5E20;
+}
+
+/* ── Column header ── */
+.column-header {
+    background-color: #171717;
+    border-bottom-width: 1px;
+    border-bottom-color: #333333;
+    flex-direction: row;
+    height: 36px;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-shrink: 0;
+}
+
+.col {
+    color: #777777;
+    font-size: 12px;
+    -unity-font-style: bold;
+    flex-shrink: 0;
+}
+
+.col-name { width: 180px; flex-grow: 1; }
+.col-map { width: 140px; }
+.col-mode { width: 160px; }
+.col-players { width: 70px; }
+.col-status { width: 60px; }
+.col-action { width: 60px; }
+
+/* ── Room scroll ── */
+.room-scroll {
+    flex-grow: 1;
+}
+
+.room-list {
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+/* ── Room row ── */
+.room-row {
+    background-color: #1A1A1A;
+    border-bottom-width: 1px;
+    border-bottom-color: #222222;
+    flex-direction: row;
+    height: 46px;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-shrink: 0;
+}
+
+.room-row:hover {
+    background-color: #252525;
+}
+
+.room-row-even {
+    background-color: #181818;
+}
+
+.room-cell {
+    color: #E6E6E6;
+    font-size: 13px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.cell-name { width: 180px; flex-grow: 1; color: #FFFFFF; -unity-font-style: bold; overflow: hidden; }
+.cell-map { width: 140px; color: #AAAAAA; overflow: hidden; }
+.cell-mode { width: 160px; color: #AAAAAA; overflow: hidden; }
+.cell-players { width: 70px; color: #CCCCCC; }
+.cell-status { width: 60px; }
+.cell-action { width: 60px; }
+
+/* ── Status badges ── */
+.status-public {
+    color: #4CAF50;
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+.status-private {
+    color: #FF9800;
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+/* ── Join button ── */
+.join-btn {
+    color: #FFFFFF;
+    font-size: 12px;
+    -unity-font-style: bold;
+    background-color: #1565C0;
+    border-width: 0px;
+    border-radius: 3px;
+    height: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-shrink: 0;
+}
+
+.join-btn:hover {
+    background-color: #1976D2;
+}
+
+.join-btn:active {
+    background-color: #0D47A1;
+}
+
+/* ── Footer ── */
+.footer-row {
+    background-color: #1F1F1F;
+    border-top-width: 1px;
+    border-top-color: #333333;
+    flex-direction: row;
+    height: 46px;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-shrink: 0;
+}
+
+.room-count {
+    color: #888888;
+    font-size: 13px;
+}
+
+.footer-spacer {
+    flex-grow: 1;
+}
+
+.refresh-btn {
+    color: #CCCCCC;
+    font-size: 13px;
+    background-color: #333333;
+    border-width: 0px;
+    border-radius: 4px;
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-shrink: 0;
+}
+
+.refresh-btn:hover {
+    background-color: #444444;
+    color: #FFFFFF;
+}
+
+/* ── Empty hint ── */
+.empty-hint {
+    color: #555555;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 48px;
+}
